@@ -4,7 +4,7 @@
 # PIC18F47Q10 Using TMR0 in 16-bit Mode with Periodic Interrupt
 
 
-## Objective:
+## Objective
 This repository contains an example of MCC-generated source code for TMR0 as described in [*TBxxxx - Getting Started with Timers/Counters on PIC18*](https://www.microchip.com/) document from Microchip.
 
 <br>This example describes how to configure TMR0 in 16-bit mode and generate an overflow interrupt every ten seconds, using LFINTOSC as clock source.
