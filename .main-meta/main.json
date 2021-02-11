@@ -4,7 +4,7 @@
     "content": {
         "metaDataVersion": "1.1.0",
         "name": "com.microchip.mcu8.mplabx.project.pic18f47q10-cnano-tmr0-16bit-sleep-int-mcc",
-        "version": "1.0.1",
+        "version": "1.0.2",
         "displayName": "Using TMR0 in 16-bit Mode with Periodic Interrupt",
         "projectName": "pic18f47q10-cnano-tmr0-16bit-sleep-int-mcc",
         "shortDescription": "Using TMR0 configured in 16-bit mode with sleep operation and interrupt wake-up. The peripheral drivers were generated using MCC.",
@@ -39,17 +39,16 @@
         "author": "Microchip",
         "subcategories": [
             [
-               "Peripherals", "TIMER", "TMR0"
+               "Peripherals",
+			   "TMR0"
             ]            			
         ],
         "peripherals": [
-            "TIMER","TMR0"
+            "TMR0"
         ],
         "keywords": [
             "Timers/Counters",
-            "Timer/Counter",
-			"Low Power",
-	        "Interrupts"
+			"Low Power"
         ],
 		"additionalData": {
 			"longDescription": {
