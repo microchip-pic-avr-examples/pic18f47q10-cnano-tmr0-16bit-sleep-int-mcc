@@ -1,3 +1,24 @@
+/**
+  @Generated CCL Header File
+
+  @Company:
+    Microchip Technology Inc.
+
+  @File Name:
+    config_bits.h
+
+  @Summary:
+    This is the config_bits.h file generated using CCL
+
+  @Description:
+    This header file provides implementations for driver APIs for all modules selected in the GUI.
+    Generation Information :
+        Driver Version    :  2.00
+    The generated drivers are tested against the following:
+        Compiler          :  XC8 v2.20
+        MPLAB             :  MPLAB X 5.40
+*/
+
 /*
 Copyright (c) [2012-2020] Microchip Technology Inc.  
 
@@ -31,27 +52,13 @@ Copyright (c) [2012-2020] Microchip Technology Inc.
     third party licenses prohibit any of the restrictions described here, 
     such restrictions will not apply to such third party software.
 */
-#include "mcc_generated_files/system/system.h"
 
-/*
-    Main application
+#ifndef CONFIG_BITS_H
+#define	CONFIG_BITS_H
+
+#include "../system/clock.h"
+
+#endif	/* CONFIG_BITS_H */
+/**
+ End of File
 */
-
-int main(void)
-{
-    SYSTEM_Initialize();
-
-    // Enable the Global Interrupts
-    INTERRUPT_GlobalInterruptEnable();
-    
-    // Enable the Peripheral Interrupts
-    INTERRUPT_PeripheralInterruptEnable();
-    
-    while(1)
-    {
-        LED0_SetLow();
-        __delay_ms(100);
-        LED0_SetHigh();    
-        SLEEP();
-    }    
-}

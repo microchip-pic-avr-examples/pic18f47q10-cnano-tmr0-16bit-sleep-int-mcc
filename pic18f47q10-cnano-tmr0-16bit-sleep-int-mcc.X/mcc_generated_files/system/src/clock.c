@@ -1,3 +1,24 @@
+/**
+  @Generated CLOCK CONTROL Source File
+
+  @Company:
+    Microchip Technology Inc.
+
+  @File Name:
+    clock.c
+
+  @Summary:
+    This is the clock.c file generated using CCL
+
+  @Description:
+    This header file provides implementations for driver APIs for all modules selected in the GUI.
+    Generation Information :
+        Driver Version    :  2.00
+    The generated drivers are tested against the following:
+        Compiler          :  XC8 v2.20
+        MPLAB             :  MPLAB X 5.40
+*/
+
 /*
 Copyright (c) [2012-2020] Microchip Technology Inc.  
 
@@ -31,27 +52,28 @@ Copyright (c) [2012-2020] Microchip Technology Inc.
     third party licenses prohibit any of the restrictions described here, 
     such restrictions will not apply to such third party software.
 */
-#include "mcc_generated_files/system/system.h"
 
-/*
-    Main application
-*/
+#include <xc.h>
+#include "../clock.h"
 
-int main(void)
+void CLOCK_Initialize(void)
 {
-    SYSTEM_Initialize();
-
-    // Enable the Global Interrupts
-    INTERRUPT_GlobalInterruptEnable();
-    
-    // Enable the Peripheral Interrupts
-    INTERRUPT_PeripheralInterruptEnable();
-    
-    while(1)
-    {
-        LED0_SetLow();
-        __delay_ms(100);
-        LED0_SetHigh();    
-        SLEEP();
-    }    
+    // Set the CLOCK CONTROL module to the options selected in the user interface.
+    // NDIV 1; NOSC HFINTOSC; 
+    OSCCON1 = 0x60;
+    // 
+    OSCCON2 = 0x70;
+    // SOSCPWR Low power; CSWHOLD may proceed; 
+    OSCCON3 = 0x0;
+    // EXTOEN disabled; HFOEN disabled; MFOEN disabled; LFOEN disabled; SOSCEN disabled; ADOEN disabled; 
+    OSCEN = 0x0;
+    // HFFRQ 1_MHz; 
+    OSCFRQ = 0x0;
+    // 
+    OSCSTAT = 0x0;
+    // TUN undefined; 
+    OSCTUNE = 0x0;
 }
+/**
+ End of File
+*/

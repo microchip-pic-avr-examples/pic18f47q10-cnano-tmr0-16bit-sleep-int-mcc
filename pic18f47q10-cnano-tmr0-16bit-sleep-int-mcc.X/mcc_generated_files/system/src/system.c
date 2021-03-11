@@ -1,3 +1,24 @@
+/**
+  @Generated CCL Source File
+
+  @Company:
+    Microchip Technology Inc.
+
+  @File Name:
+    system.c
+
+  @Summary:
+    This is the system.c file generated using CCL
+
+  @Description:
+    This header file provides implementations for driver APIs for all modules selected in the GUI.
+    Generation Information :
+        Driver Version    :  2.00
+    The generated drivers are tested against the following:
+        Compiler          :  XC8 v2.20
+        MPLAB             :  MPLAB X 5.40
+*/
+
 /*
 Copyright (c) [2012-2020] Microchip Technology Inc.  
 
@@ -31,27 +52,18 @@ Copyright (c) [2012-2020] Microchip Technology Inc.
     third party licenses prohibit any of the restrictions described here, 
     such restrictions will not apply to such third party software.
 */
-#include "mcc_generated_files/system/system.h"
 
-/*
-    Main application
-*/
+ /**
+   Section: Included Files
+ */
+#include "../system.h"
 
-int main(void)
+
+void SYSTEM_Initialize(void)
 {
-    SYSTEM_Initialize();
-
-    // Enable the Global Interrupts
-    INTERRUPT_GlobalInterruptEnable();
-    
-    // Enable the Peripheral Interrupts
-    INTERRUPT_PeripheralInterruptEnable();
-    
-    while(1)
-    {
-        LED0_SetLow();
-        __delay_ms(100);
-        LED0_SetHigh();    
-        SLEEP();
-    }    
+    INTERRUPT_Initialize();
+    CLOCK_Initialize();
+    Timer0_Initialize();
+    PIN_MANAGER_Initialize();
 }
+
