@@ -4,12 +4,8 @@
     <configuration>
         <data xmlns="http://www.netbeans.org/ns/make-project/1">
             <name>pic18f47q10-cnano-tmr0-16bit-sleep-int-mcc</name>
-            <creation-uuid>5c5074c7-a156-4a2a-894f-09391dcc9007</creation-uuid>
+            <creation-uuid>284113f4-46d0-4062-8036-7f1eef90f0fb</creation-uuid>
             <make-project-type>0</make-project-type>
-            <c-extensions>c</c-extensions>
-            <cpp-extensions/>
-            <header-extensions>h</header-extensions>
-            <asminc-extensions/>
             <sourceEncoding>ISO-8859-1</sourceEncoding>
             <make-dep-projects/>
             <sourceRootList/>

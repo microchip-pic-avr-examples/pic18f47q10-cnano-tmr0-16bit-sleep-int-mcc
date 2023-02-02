@@ -4,27 +4,27 @@
     "content": {
         "metaDataVersion": "1.1.0",
         "name": "com.microchip.mcu8.mplabx.project.pic18f47q10-cnano-tmr0-16bit-sleep-int-mcc",
-        "version": "2.0.0",
-        "displayName": "Using TMR0 in 16-bit Mode with Periodic Interrupt",
+        "version": "3.0.0",
+        "displayName": "Timer0 in 16-bit Mode with Periodic Interrupt using the PIC18F47Q10 Microcontroller with MCC Melody",
         "projectName": "pic18f47q10-cnano-tmr0-16bit-sleep-int-mcc",
-        "shortDescription": "Using TMR0 configured in 16-bit mode with sleep operation and interrupt wake-up. The peripheral drivers were generated using MCC.",
+        "shortDescription": "Using TMR0 configured in 16-bit mode with sleep operation and interrupt wake-up. The peripheral drivers were generated using MCC Melody.",
         "ide": {
             "name": "MPLAB X",
-            "semverRange": ">=5.45.0"
+            "semverRange": ">=6.05.0"
         },
         "compiler": [
 			{
 				"name": "XC8",
-				"semverRange": "^2.31.0"
+				"semverRange": "^2.40.0"
 			}
 		],
         "dfp": {
             "name": "PIC18F-Q_DFP",
-            "semverRange": "^1.8.154"
+            "semverRange": "^1.15.360"
         },
         "configurator": {
             "name": "MCC",
-            "semverRange": "^4.1.0"
+            "semverRange": "^5.2.1"
         },
         "device": {
             "metaDataVersion": "1.0.0",
