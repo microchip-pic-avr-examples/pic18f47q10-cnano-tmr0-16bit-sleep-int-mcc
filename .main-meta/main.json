@@ -2,7 +2,7 @@
     "metaDataVersion": "1.0.0",
     "category": "com.microchip.ide.project",
     "content": {
-        "metaDataVersion": "1.1.0",
+        "metaDataVersion": "1.3.0",
         "name": "com.microchip.mcu8.mplabx.project.pic18f47q10-cnano-tmr0-16bit-sleep-int-mcc",
         "version": "2.0.1",
         "displayName": "Timer0 in 16-bit Mode with Periodic Interrupt using the PIC18F47Q10 Microcontroller with MCC Melody",
@@ -37,17 +37,13 @@
             }
         },
         "author": "Microchip",
-        "subcategories": [
-            [
-               "Peripherals",
-			   "TMR0"
-            ]            			
-        ],
         "peripherals": [
             "TMR0"
         ],
         "keywords": [
-            "Timers/Counters",
+            "TMR",
+			"INT",
+			"Sleep",
 			"Low Power",
 			"Melody"
         ],
