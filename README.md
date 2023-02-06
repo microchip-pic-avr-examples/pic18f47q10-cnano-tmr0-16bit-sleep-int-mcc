@@ -2,7 +2,7 @@
 
 # Timer0 in 16-bit Mode with Periodic Interrupt using the PIC18F47Q10 Microcontroller with MCC Melody
 
-This repository contains an example of MCC Melody generated source code for Timer0 (TMR0) as described in [*TB3285 - Getting Started with Timers/Counters on PIC18*](https://www.microchip.com/wwwappnotes/appnotes.aspx?appnote=en1003329) document from Microchip. This example describes how to configure TMR0 in 16-bit mode and generate an overflow interrupt every ten seconds, using the LFINTOSC as clock source. TMR0 will run while the microcontroller is in Sleep mode.
+This repository contains an example of MCC Melody-generated source code for Timer0 (TMR0) as described in [TB3285 - Getting Started with Timers/Counters on PIC18](https://www.microchip.com/wwwappnotes/appnotes.aspx?appnote=en1003329) document from Microchip. This example shows how to configure the TMR0 in 16-bit mode, and generate an overflow interrupt every 10 seconds, using LFINOSC as a clock source. TMR0 runs while the microcontroller (MCU) is in Sleep mode. 
 
 <br>A GPIO pin (the development board’s on-board LED) will be configured as output and when the interrupt occurs, the microcontroller is woken up, the LED is lit for 100 ms and then the microcontroller is put back in Sleep mode.
 
@@ -68,17 +68,17 @@ The following pin configuration must be made for this project:
 
 ## 2. Demo
 
-In this demo, it is represented how the TMR0 intterupt is working when the microcontroller is in the sleep mode. The on-board LED toggles once in 10 seconds in order to show how the timer interrupt wakes up the microcontroller.
+This demo shows how the TMR0 interrupt works when the MCU is in Sleep mode. The on-board LED toggles every 10 seconds when the timer interrupt wakes up the MCU.
 
 <br><img src="images/TMR0_16bit_sleep_int.gif" width="600">
 
-A snapshot of the signal for the LED is presented in the below picture from the logic analyzer software.
+The LED signal is shown in the logic analyzer software picture below.
 
 <br><img src="images/logic-analyzer.png">
 
 ## 3. Summary
 
-This project is an illustration for a basic use case based around TMR0 interrupt.
+This project provides an example of a basic use case based on TMR0 interrupt.
 
 ##  How to Program the Curiosity Nano board
 
